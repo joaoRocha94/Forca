@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Jogo da forca</title>
+  <link href="style.css" rel="stylesheet" type="text/css" media="screen"/> 
+</head>
+
+<body>
+  <div class="container">
+    <h1>JOGO DA FORCA</h1>
+    <div class="forca">  
+      <div class="vidas">
+        <img id="forcaInicial" src="imagens/forca.svg"/>
+        <!--<img id="cabeca" src="imagens/cabeca.svg"/>-->
+        <!--<img id="tronco" src="imagens/tronco.svg"/>-->
+        <!--<img id="braco" src="imagens/bracos.svg"/>-->
+        <!--<img id="perna1" src="imagens/perna1.svg"/>-->
+        <!--<img id="perna2" src="imagens/perna2.svg"/>-->
+      </div>
+      <div class="letras-utilizadas">
+        <h3>LETRAS UTILIZADAS</h3>
+      </div>
+    </div>
+    <div id="palavra-secreta"></div>
+    <div id="letras">
+      <div id="tituloDigitar"><p>DIGITE UMA LETRA</p></div>
+      <div class="teclas">
+        <button id="letra" onclick="digitarLetra('A')">A</button>
+        <button id="letra" onclick="digitarLetra('B')">B</button>
+        <button id="letra" onclick="digitarLetra('C')">C</button>
+        <button id="letra" onclick="digitarLetra('D')">D</button>
+        <button id="letra" onclick="digitarLetra('E')">E</button>
+        <button id="letra" onclick="digitarLetra('F')">F</button>
+        <button id="letra" onclick="digitarLetra('G')">G</button>
+        <button id="letra" onclick="digitarLetra('H')">H</button>
+        <button id="letra" onclick="digitarLetra('I')">I</button>
+        <button id="letra" onclick="digitarLetra('J')">J</button>
+        <button id="letra" onclick="digitarLetra('K')">K</button>
+        <button id="letra" onclick="digitarLetra('L')">L</button>
+        <button id="letra" onclick="digitarLetra('M')">M</button>
+      </div>
+      <div class="teclas">
+        <button id="letra" onclick="digitarLetra('N')">N</button>
+        <button id="letra" onclick="digitarLetra('O')">O</button>
+        <button id="letra" onclick="digitarLetra('P')">P</button>
+        <button id="letra" onclick="digitarLetra('Q')">Q</button>
+        <button id="letra" onclick="digitarLetra('R')">R</button>
+        <button id="letra" onclick="digitarLetra('S')">S</button>
+        <button id="letra" onclick="digitarLetra('T')">T</button>
+        <button id="letra" onclick="digitarLetra('U')">U</button>
+        <button id="letra" onclick="digitarLetra('V')">V</button>
+        <button id="letra" onclick="digitarLetra('W')">W</button>
+        <button id="letra" onclick="digitarLetra('X')">X</button>
+        <button id="letra" onclick="digitarLetra('Y')">Y</button>
+        <button id="letra" onclick="digitarLetra('Z')">Z</button>
+      </div>
+    </div>
+    <!--<div id="containerDica">
+      <div id="barra">
+        <img src="icones/dica2.png"/>
+        <h2>DICA</h2>
+        <img src="icones/dica2.png"/>
+      </div>
+      <div class="dicas"></div>
+    </div>-->
+    <div id="avisos">
+      <div id="barra">
+        <img src="icones/alerta.png"/>
+        <h2>AVISOS</h2>
+        <img src="icones/alerta.png"/>
+      </div>
+      <div id="texto">
+        <h4>*A sua quantidade de vidas é 5.</h4>
+        <h4>*Caso erre uma letra, será perdida uma vida.</h4>
+        <h4>*Se suas vidas se esgotarem antes da palavra ser acertada, você perde a partida.</h4>
+      </div>
+    </div>
+    <div id="mensagem"></div>
+    <div class="opcoes">
+      <!--<button id="dica">DICA</button>-->
+      <a href="jogo.html"><button id="jogar">NOVA PALAVRA</button></a>
+      <a href="index.html"><button id="sair">SAIR</button></a>
+    </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+ <!---->
+<script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
